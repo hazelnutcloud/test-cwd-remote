@@ -5,6 +5,6 @@ if (import.meta.main) {
   console.log(dir);
   const path = Deno.args[0];
   console.log(join(Deno.cwd(), path));
-  Deno.env.set("DENO_DIR", "/");
+  Deno.env.set("DENO_DIR", "/tmp");
   await import(join(Deno.cwd(), path));
 }
